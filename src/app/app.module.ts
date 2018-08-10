@@ -6,8 +6,6 @@ import { HttpModule } from '@angular/http';
 //import { BooststrapModule } from 'bootstrap';
 
 import { AppComponent } from './app.component';
-// import { BikeComponent } from './bike/bike.component';
-// import { BikeInfoComponent } from './bike-info/bike-info.component';
 import { TestComponent } from './test/test.component';
 
 

@@ -17,6 +17,9 @@
     <div class="col-md-8">
       <label class="radio-inline">Enter Email</label>
       <input type="text" formControlName="email">
+      <div *ngIf="testForm.get('email').invalid && testForm.get('email').errors.customError.inValid" class="error">
+          {{testForm.get('email').errors.customError.errMsg}}
+      </div>
     </div>
 
     <div class="col-md-8">
