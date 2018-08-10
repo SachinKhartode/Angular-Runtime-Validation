@@ -1,0 +1,32 @@
+<form [formGroup]="testForm">
+  <div class="form-group">
+    <label class="col-md-2 control-label">Select Send Notifications Type:</label>
+    
+    <div class="col-md-8">
+      <label class="radio-inline">
+        <input type="radio" value="email" formControlName="notification">Email
+      </label>
+    </div>
+    
+    <div class="col-md-8">
+      <label class="radio-inline">
+        <input type="radio" value="phone" formControlName="notification">Phone
+      </label>
+    </div>
+
+    <div class="col-md-8">
+      <label class="radio-inline">Enter Email</label>
+      <input type="text" formControlName="email">
+    </div>
+
+    <div class="col-md-8">
+      <label class="radio-inline">Enter Phone</label>
+      <input type="text" formControlName="phone">
+    </div>
+
+    <div class="col-md-8">
+      <button type="submit" [disabled]="testForm.invalid">submit</button>
+    </div>
+
+  </div>
+</form>
